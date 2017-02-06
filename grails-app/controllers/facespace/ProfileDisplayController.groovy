@@ -10,20 +10,7 @@ class ProfileDisplayController extends RestfulController{
     }
 
     def index() {
-//        for(UserAccount acc : UserAccount.findAll{userName == "Simon"}){
-        for(UserAccount acc : UserAccount.findAll()){
-            render acc.getUserName() + '</br>'
-            def posts = acc.getProfile().getPosts()
-            for(Post p : posts){
-                if(p instanceof StatusPost){
-                    String s = p.getStatusText()
-                    s += ' ' + p.getDateCreated()
-                    render s
-                }
-                render '</br>'
-            }
-            render '</br>'
-        }
+
     }
 
     // Shows the basic idea of calling a controller method by URL
@@ -32,6 +19,11 @@ class ProfileDisplayController extends RestfulController{
         System.out.println('request received.')
         def uname = params.userName
         def account = UserAccount.find{userName == uname}
-        respond account.getProfile().getPosts()
+        if(account!=null){
+            respond account.getProfile().getPosts()
+        }
+        else{
+            response.status = 404
+        }
     }
 }
