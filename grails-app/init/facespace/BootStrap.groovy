@@ -3,10 +3,8 @@ package facespace
 class BootStrap {
 
     def init = { servletContext ->
-//        createSaveAccount('Ethan', '2212', 'My first status!')
-//        createSaveAccount('Kate', '2212', 'My first status!')
-//        createSaveAccount('Simon', '2212', 'Meow!')
-//        createSaveAccount('Marceline', '2212', 'Meeeeow!')
+        // This code runs on Grails startup.
+        // Try adding some new accounts for testing!
     }
     def destroy = {
     }
