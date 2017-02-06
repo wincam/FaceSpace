@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>FaceSpace</title>
-        Welcome to FaceSpace!!!
     </head>
     <body>
         <div id="statusUpdate" align="left"></div>
