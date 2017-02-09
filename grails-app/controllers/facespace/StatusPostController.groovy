@@ -7,7 +7,7 @@ class StatusPostController extends RestfulController{
     static allowedMethods = [postStatus: 'POST']
 
     StatusPostController(){
-        super(StatusPost);
+        super(StatusPost)
     }
 
     def index() {
