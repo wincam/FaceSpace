@@ -4,7 +4,7 @@
 import React from 'react';
 import {StatusFeed} from './statusfeed'
 
-var TextBox = React.createClass({
+var SearchBox = React.createClass({
 
     // Used to initialize state
     getInitialState () {
@@ -54,7 +54,7 @@ var StatusSearchComponent = React.createClass({
         return(
             <div>
                 Enter a FaceSpace user's name here:<br/>
-                <TextBox callback={this.setNameState}/>
+                <SearchBox callback={this.setNameState}/>
                 <br/>
                 <StatusFeed name={this.state.name}/>
             </div>

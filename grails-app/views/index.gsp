@@ -4,9 +4,9 @@
         <title>FaceSpace</title>
     </head>
     <body>
+        <div id="statusFeed" align="left"></div>
         <div id="statusUpdate" align="left"></div>
     <br/>
-        <div id="statusFeed" align="left"></div>
-        <asset:javascript src="bundle.js"/>
+        <asset:javascript src="index.bundle.js"/>
     </body>
 </html>

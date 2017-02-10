@@ -2,12 +2,13 @@
 
     module.exports = {
         entry: {
-            index: './src/main/js/index.js'
+            index: './src/main/js/index.js',
+            page2: './src/main/js/page2.js'
         },
         output: {
             path: './grails-app/assets/javascripts',
             publicPath: '/assets/',
-            filename: 'bundle.js'
+            filename: '[name].bundle.js'
         },
         module: {
             loaders: [

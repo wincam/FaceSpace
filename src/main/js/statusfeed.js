@@ -1,5 +1,5 @@
 import React from 'react';
-import 'whatwg-fetch'
+// import 'whatwg-fetch'
 
 // Change this class so that it's more of a StatusFeed feed than a single status.
 
@@ -29,7 +29,7 @@ export class StatusFeed extends React.Component {
 
     constructor() {
         super();
-        this.state = {status: '', statuses: []};
+        this.state = {statuses: []};
     }
 
     fetchFromAPI(name){
@@ -60,7 +60,7 @@ export class StatusFeed extends React.Component {
         let name = nextProps.name;
         this.fetchFromAPI(name);
     }
-
+    
     render() {
         return(
             <div>
@@ -69,3 +69,5 @@ export class StatusFeed extends React.Component {
         );
     }
 }
+
+
