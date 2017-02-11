@@ -14,10 +14,6 @@ class StatusPostController extends RestfulController{
         // some default behaviour could be here
     }
 
-    def fail() {
-        render "Fail."
-    }
-
     // Our first POST-enabled method
     // We just want to get the status text and save it to the profile.
     def postStatus(){
