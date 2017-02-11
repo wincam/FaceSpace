@@ -3,7 +3,6 @@
     module.exports = {
         entry: {
             index: './src/main/js/index.js',
-            page2: './src/main/js/page2.js'
         },
         output: {
             path: './grails-app/assets/javascripts',
