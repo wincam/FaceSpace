@@ -77,7 +77,7 @@ export class AccountCreation extends React.Component{
                 this.setState({status: this.state.accountName + " created!"});
             }
             else{
-                this.setState({status: this.state.accountName + " not created"});
+                this.setState({status: this.state.accountName + " was already taken..."});
             }
         })
 
